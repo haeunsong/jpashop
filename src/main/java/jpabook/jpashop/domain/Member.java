@@ -20,6 +20,7 @@ public class Member {
 
     // member와 order는 일대다 관계
     // order 테이블에 있는 member 필드에 의해 난 매핑된거야
+    // 난 조회만 가능해!
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
